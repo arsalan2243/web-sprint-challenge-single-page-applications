@@ -231,7 +231,7 @@ const Form = (props) => {
           className="btn"
           name="order-button"
           data-cy="submit"
-          //   onClick={() => props.history.push("/")}
+          onClick={() => props.history.push("/")}
         >
           Submit Order
         </button>
