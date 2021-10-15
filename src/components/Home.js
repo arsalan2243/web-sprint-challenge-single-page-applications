@@ -1,11 +1,14 @@
 import React from "react";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="Home">
       <h1>Your Favorite Food!</h1>
-      <button>Pizza</button>
-      <img className="home-image" src="../Pizza.jpg" alt="" />
+      <div>
+        <button className="Buttons" onClick={() => props.history.push("/form")}>
+          Pizza
+        </button>
+      </div>
     </div>
   );
 };
