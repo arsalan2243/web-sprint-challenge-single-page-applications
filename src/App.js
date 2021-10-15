@@ -12,7 +12,7 @@ const App = () => {
         <div className="Links">
           <Link to="/">Home</Link>
           <Link to="/help">Help</Link>
-          <Link id="order-pizza" to="/piza"></Link>
+          <Link id="order-pizza" to="/pizza"></Link>
         </div>
       </nav>
       <Switch>
