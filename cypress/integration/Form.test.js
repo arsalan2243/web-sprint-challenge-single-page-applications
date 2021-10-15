@@ -1,9 +1,9 @@
 describe("testing the input on the pizza form", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:3000/form");
+    cy.visit("http://localhost:3000/pizza");
   });
   it("add test to inputs", () => {
-    cy.visit("http://localhost:3000/form");
+    cy.visit("http://localhost:3000/pizza");
 
     cy.get("[data-cy=sauce]").check().should("be.checked");
     cy.get("[data-cy=name-input]").type("name").should("have.value", "name");
