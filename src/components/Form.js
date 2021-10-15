@@ -57,9 +57,8 @@ const Form = (props) => {
     event.persist();
     const { value, name, checked, type } = event.target;
     const newValue = type === "checkbox" ? checked : value;
-    validation(name, newValue); //===================================>
+    validation(name, newValue);
     setData({ ...Data, [name]: newValue });
-    // console.log("value" ,name , newValue);
   };
 
   // axios //
@@ -70,7 +69,7 @@ const Form = (props) => {
     axios
       .post("https://reqres.in/api/orders", Data)
       .then((response) => {
-        setPost(response.data); /// use on the next conforemantion page
+        setPost(response.data);
         console.log(response.data);
         setData({
           size: "",
